@@ -1,3 +1,7 @@
+/* a {
+    margin: 10px 0 10px 0;
+} */
+
 body {
     background-image: url('/images/food_back.jpg');
     background-size: cover;
@@ -11,7 +15,7 @@ body {
     align-items: center;
 }
 
-.login {
+.backlayer {
     color: white; 
     width: 700px;
     height: 400px;
@@ -27,7 +31,6 @@ body {
 }
 
 input[type=text], select {
-    font-size; 28px;
     width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -37,8 +40,17 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+input[type=search], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 60px 0 40px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
 input[type=password], select {
-    font-size; 28px;
     width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -57,4 +69,48 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.linkto {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Londrina Outline', cursive;
+}
+
+.linkto a{
+   text-decoration: none;   
+   font-size: 60px;
+   color: Orange;
+   margin: 20px 0 20px 0;
+}
+
+.mainback {
+    color: white; 
+    width: 60%;
+    height: 80%;
+    background-color: black;
+    opacity: .8;
+    text-align: left;
+}
+
+.review {
+ margin: 0px 0px 0px 40px;
+font-family: 'Wellfleet', cursive;
+}
+
+.myreview {
+    margin: 0px;
+    font-family: 'Wellfleet', cursive;
+    font-size:20px;
+    background-color: orange;
+    text-align: center;
+    color:black;
+}
+
+.title {
+font-size:24px;
+color: orange;
+font-family: 'Wellfleet', cursive;
+margin: 10px 0px 0px 40px;
 }

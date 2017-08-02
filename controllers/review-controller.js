@@ -3,9 +3,9 @@ const Review = require('../models/review');
 const reviewController = {};
 
 reviewController.index = (req, res) => {
-  Todo.findAll(req.user.id)
+  Review.findAll()
     .then(review => {
-      res.render('review/review-index', {
+      res.render('reviews/review-main', {
         data: review,
       });
     }).catch(err => {

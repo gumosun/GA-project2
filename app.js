@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 const reviewRoutes = require ('./routes/review-routes')
-app.use('/main' , reviewRoutes);
+app.use('/review' , reviewRoutes);
 
 app.use('*', (req, res) => {
   res.status(400).json({

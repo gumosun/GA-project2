@@ -1,4 +1,4 @@
-\c my_fav_dev;
+\c my_rating_dev;
 
 CREATE TABLE IF NOT EXISTS users
 (
@@ -17,10 +17,10 @@ CREATE TABLE IF NOT EXISTS reviews
   user_id INT REFERENCES users(id)
 );
 
-CREATE TABLE IF NOT EXISTS restaurants
-(
-  id SERIAL PRIMARY KEY,
-  res_name VARCHAR(255) REFERENCES reviews(res_name),
-  category VARCHAR(255),
-  address VARCHAR(255)
-);
+-- CREATE TABLE IF NOT EXISTS restaurants
+-- (
+--   id SERIAL PRIMARY KEY,
+--   res_name VARCHAR(255) REFERENCES reviews(res_name),
+--   category VARCHAR(255),
+--   address VARCHAR(255)
+-- );
