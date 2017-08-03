@@ -2,6 +2,7 @@ const express = require ('express');
 const logger = require ('morgan');
 const path = require ('path');
 const bodyParser = require ('body-parser');
+const methodOverride = require('method-override');
 
 const app = express();
 require('dotenv').config();
@@ -9,7 +10,7 @@ require('dotenv').config();
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-
+app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
