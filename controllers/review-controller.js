@@ -52,5 +52,32 @@ reviewController.delete = (req, res) => {
       });
 };
 
+reviewController.edit = (req, res) => {
+  Review.findById(req.params.id)
+    .then(review => {
+      console.log(review + 'this is edit');
+      res.render('reviews/review-edit',{
+        data: review,
+      });
+    }).catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+    });
+}
+
+reviewController.update = (req, res) => {
+  Review.update({
+    res_name: req.body.res_name,
+    rating: req.body.rating,
+    memo: req.body.memo,
+  }, req.params.id).then(review => {
+    console.log('update');
+    res.redirect('/review/history');
+  }).catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+    });
+};
+
 
 module.exports = reviewController;

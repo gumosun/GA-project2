@@ -22,7 +22,7 @@
          <form method="POST" action='/review/<%= review.id %>?_method=DELETE'>
                    <input type="submit" value="Delete it!"/> 
                 </form>
-         <form method="POST" action='/review/<%= data.id %>?_method=UPDATE'>
+         <form method="GET" action='/review/<%= review.id %>/edit'>
                    <input type="submit" value="Edit it!"/> 
                 </form>
                 </div>

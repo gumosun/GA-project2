@@ -1,0 +1,28 @@
+<% include ../partials/boilerplate %>
+
+<div class='container'>
+    <div class='backlayer'>
+       <div class='pagetitle'>
+        <h1>Edit Your Rating!</h1>
+        </div>
+        <div class='addarea'>
+    <form method='POST' action='/review/<%= data.id %>?_method=PUT'>
+        <input type="hidden" name='id' value='<%= data.id %>'/>
+        <input type="text" name="res_name" value='<%= data.res_name %>'/>
+        <select class='selec-style' name='rating'>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+                </select> </br>
+        <input type="text" name="memo" value="<%= data.memo %>"/> </br>
+        <input type="submit" value='Edit it!'/>
+        </form>
+        </div>
+</div>
+    </div>
+    
+
+
+<% include ../partials/end %>

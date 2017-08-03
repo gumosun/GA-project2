@@ -16,6 +16,9 @@ reviewRoutes.get('/add', (req, res) => {
   res.render('reviews/review-add');
 });
 reviewRoutes.get('/history', reviewController.index);
+reviewRoutes.get('/:id/edit', reviewController.edit);
+reviewRoutes.put('/:id', reviewController.update);
 reviewRoutes.delete('/:id', reviewController.delete);
+
 
 module.exports = reviewRoutes;
