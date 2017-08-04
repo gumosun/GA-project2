@@ -11,6 +11,7 @@ function getGoogleByName(req, res, next) {
       fetchRes.json()
     ).then((jsonFetchRes) => {
       res.locals.googleData = jsonFetchRes.results;
+      console.log(res.locals.googleData);
       next(); 
     }).catch(err => {
       console.log(err);

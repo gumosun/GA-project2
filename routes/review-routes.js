@@ -11,7 +11,7 @@ reviewRoutes.get('/search', (req, res) => {
   res.render('reviews/review-search');
 });
 reviewRoutes.post('/', reviewController.create);
-reviewRoutes.post('/search', reviewHelpers.getGoogleByName ,reviewController.show);
+reviewRoutes.post('/search', reviewHelpers.getGoogleByName , reviewController.show);
 reviewRoutes.get('/add', (req, res) => {
   res.render('reviews/review-add');
 });
