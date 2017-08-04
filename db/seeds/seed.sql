@@ -1,2 +1,2 @@
-\c my_rating_dev;
+-- \c my_rating_dev;
 \i review.sql
