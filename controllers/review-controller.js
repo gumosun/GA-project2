@@ -20,6 +20,7 @@ reviewController.show = (req, res) => {
       console.log(review);
       res.render('reviews/review-main', {
       data: review, 
+      google: res.locals.googleData,
       });
     }).catch(err => {
       console.log(err);
