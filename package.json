@@ -4,7 +4,7 @@
   "description": "### How-to-use  1. Users have to log in  1. You can search the restaurant's review or wirte one 1. Allow users to edit and delete the review",
   "main": "app.js",
   "scripts": {
-    "start": "Node app.js",
+    "start": "node app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
