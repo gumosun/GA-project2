@@ -22,13 +22,13 @@ Review.findByName = (res_name) => {
   `, [res_name]);
 };
 
-Review.create = (review) => {
+Review.create = (review, userid) => {
   return db.one(`
     INSERT INTO reviews
     (res_name, rating, memo, user_id)
-    VALUES ($1, $2, $3, NULL)
+    VALUES ($1, $2, $3, $4)
     RETURNING *
-  `, [review.res_name, review.rating, review.memo, review.user_id]);
+  `, [review.res_name, review.rating, review.memo, userid]);
 };
 
 Review.destroy = (id) => {

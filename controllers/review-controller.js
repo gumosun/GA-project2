@@ -34,7 +34,7 @@ reviewController.create = (req, res) => {
     rating: req.body.rating,
     memo: req.body.memo,
     // user_id: req.user.id,
-  }).then(review => {
+  }, req.user.id).then(review => {
     console.log(review);
     res.redirect('/review/history');
   }).catch(err => {

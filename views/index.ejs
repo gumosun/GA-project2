@@ -14,12 +14,13 @@
         <div class='container'>
             <div class='backlayer'>
                 <div class='headbanner'>Welcome to MyResRating!</div>
-                <form method='get' action='/review/search'>
+                <form method='POST' action='/auth/login'>
                 <!--need to make require after finish  -->
-                 <input name='username' type='text' placeholder='username'  /> </br> 
-                 <input name='password' type='password' placeholder='password'  /></br>
+                 <input name='username' type='text' placeholder='username' required /> </br> 
+                 <input name='password' type='password' placeholder='password' required /></br>
                  <input type='submit' value='Log in!' />
                 </form>
+                <a href="/auth/register">Register!</a>
             </div>
         </div>        
     <!-- </body>

@@ -4,7 +4,6 @@
   "description": "### How-to-use  1. Users have to log in  1. You can search the restaurant's review or wirte one 1. Allow users to edit and delete the review",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,13 +18,18 @@
   },
   "homepage": "https://github.com/gumosun/GA-project2#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.3",
+    "express-session": "^1.15.5",
     "isomorphic-fetch": "^2.2.1",
     "method-override": "^2.3.9",
     "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "pg-promise": "^6.3.6"
   }
