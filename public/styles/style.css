@@ -62,7 +62,7 @@ body {
 
 .backlayer a {
     color: white;
-    font-size:28px;
+    font-size:32px;
     text-decoration: none;
 }
 
@@ -86,6 +86,16 @@ input[type=search], select {
     width: 50vh;
     padding: 12px 20px;
     margin: 60px 10px 40px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 60vh;
+    padding: 12px 20px;
+    margin: 10px 10px 10px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 25px;
@@ -161,7 +171,7 @@ select-style , select {
 }
 
 .history {
-    margin: 50px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     padding: 10px auto;
     height: auto;
     min-height:400px;
@@ -238,4 +248,20 @@ margin: 10px 0px 0px 40px;
     margin: 0px 20px;
     justify-content: space-around;
 }
+
+.register-container {
+    color: white; 
+    width: 700px;
+    height: 300px;
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Londrina Outline', cursive;
+    margin:150px auto;
+    padding:50px 0px 0px 0px;
+}
+
 

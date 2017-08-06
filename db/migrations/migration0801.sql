@@ -1,4 +1,4 @@
-\c my_rating_dev;
+-- \c my_rating_dev;
 
 CREATE TABLE IF NOT EXISTS users
 (
