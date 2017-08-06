@@ -9,12 +9,12 @@ const authHelpers = require('../services/auth/auth-helpers');
 reviewRoutes.get('/', (req, res) => {
   res.render('reviews/review-main');
 });
-reviewRoutes.get('/search', (req, res) => {
+reviewRoutes.get('/search', authHelpers.loginRequired, (req, res) => {
   res.render('reviews/review-search');
 });
 reviewRoutes.post('/', authHelpers.loginRequired, reviewController.create);
 reviewRoutes.post('/search', reviewHelpers.getGoogleByName , reviewController.show);
-reviewRoutes.get('/add', (req, res) => {
+reviewRoutes.get('/add', authHelpers.loginRequired, (req, res) => {
   res.render('reviews/review-add');
 });
 reviewRoutes.get('/history', authHelpers.loginRequired, reviewController.index);

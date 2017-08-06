@@ -15,7 +15,7 @@ authRouter.get('/register', (req, res) => {
 authRouter.post('/register', usersController.create);
 
 authRouter.post('/login', passport.authenticate('local', {
-    successRedirect: '/review/history', 
+    successRedirect: '/review/search', 
     failureRedirect: '/auth/login',
     failureFlash: true,
   })
